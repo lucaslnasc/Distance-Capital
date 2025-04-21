@@ -1,18 +1,50 @@
-## Getting Started
+# Sistema de Cálculo da Menor Distância entre Capitais Brasileiras
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um sistema que calcula a menor distância entre capitais brasileiras utilizando o algoritmo de Dijkstra. Ele também permite visualizar todas as conexões disponíveis entre as capitais.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+- Calcular a menor distância entre duas capitais.
+- Exibir todas as conexões disponíveis entre as capitais.
+- Listar todas as capitais disponíveis no sistema.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Estrutura do Projeto
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+O projeto está organizado da seguinte forma:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+src/ ├── Main.java # Classe principal que inicia o sistema ├── algorithm/ │ └── AlgoritmoDijkstra.java # Implementação do algoritmo de Dijkstra ├── model/ │ ├── Capital.java # Representação de uma capital │ └── Grafo.java # Representação do grafo de conexões entre capitais ├── service/ │ ├── CapitalService.java # Serviço para manipulação de capitais │ └── DadosCapitais.java # Dados e conexões entre capitais └── ui/ ├── Menu.java # Interface de menu para interação com o usuário └── SistemaCapitais.java # Controlador principal do sistema
 
-## Dependency Management
+## Como Executar
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Certifique-se de ter o [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html) instalado.
+2. Compile o projeto:
+   ```bash
+   javac -d bin src/**/*.java
+   ```
+
+### Exemplo de Uso
+
+1. Escolha a opção "1" no menu principal para calcular a menor distância entre duas capitais.
+2. Insira o nome da capital de origem e da capital de destino.
+3. O sistema exibirá o caminho mais curto e a distância total.
+
+### Tecnologias Utilizadas
+
+Java: Linguagem de programação principal.
+Algoritmo de Dijkstra: Para cálculo do menor caminho em grafos.
+
+### Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+### Licença
+
+Este projeto está licenciado sob a MIT License.
+
+### Autores:
+
+Jhon Leno
+
+Lucas de Lima
+
+Sergio Paulo
