@@ -1,7 +1,7 @@
-import ui.SistemaCapitais;
+import ui.MapFrame;
 
 public class Main {
     public static void main(String[] args) {
-        new SistemaCapitais().executar();
+        new MapFrame().setVisible(true);
     }
 }
